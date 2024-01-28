@@ -1,0 +1,104 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("/Images/Bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main {
+    border: 1px solid grey;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(160, 230, 230);
+    padding: 8px;
+    margin-left: 7px;
+}
+.main:hover {
+    background-color: rgb(102, 215, 215);
+}
+.mainright {
+    margin-right: 35px;
+    font-family: cursive;
+
+}
+.mainleft img {
+    width: 45px;
+    height: 25px;
+}
+.mainleft {
+    margin-left: 35px;
+}
+.containerMain1 {
+
+    border: 1px rgb(207, 146, 93) solid;
+    margin: 10px;
+    padding: 0px 30px;
+    background-color: rgb(233, 155, 78);
+}
+.calculator {
+    display: block;
+    border: 2px solid rgb(12, 12, 12);
+    background-color: rgb(206, 217, 213);
+}
+.menu1 {
+    font-family: cursive;
+    text-align: center;
+    font-size: 25px;
+}
+.list1 {
+    justify-content: space-around;
+}
+.calculator1 {
+    display: flex;
+    justify-content: space-around;
+}
+.calculator2 {
+    display: flex;
+    justify-content: space-around;
+}
+.foot1 {
+    margin: 10px;
+    text-align: center;
+}
+.Square {
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(207, 207, 30);
+}
+.simpleinterest1 {
+    border: 2px solid rgb(10, 10, 10);
+    text-align: center;
+    background-color: rgb(142, 173, 231);
+}
+.compoundInst {
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgb(214, 151, 144);
+}
+.cone1 {
+    border: 2px solid black;
+    text-align: center;
+    background-color: thistle;
+}
+.cone2 {
+    border: 2px solid black;
+    background-color: silver;
+    text-align: center;
+}
+.triange1 {
+    border: 2px solid black;
+    text-align: center;
+    background-color: tan;
+}
+.hexagon {
+    border: 2px solid black;
+    background-color: rosybrown;
+    text-align: center;
+}
+.Parallelogram1 {
+    border: 2px solid black;
+    background-color: orchid;
+    text-align: center;
+}

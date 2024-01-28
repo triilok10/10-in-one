@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 in One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="myLoad()">
+    <div class="main">
+        <div class="mainleft">
+            <img src="/Images/logo.png" alt="logo">
+        </div>
+        <div class="mainright">
+            Apna Calculator
+        </div>
+    </div>
+    <div class="containerMain1">
+        <!-- Sum Of Four Number -->
+        <div class="calculator">
+            <div class="menu1">Sum of Four Number</div>
+            <div class="list1">
+                <div class="calculator1">
+                    <b>Number 1</b>
+                    <input type="number" id="number1" placeholder="Number 1" required>
+                    <b>Number 2</b>
+                    <input type="number" id="number2" placeholder="Number 2" required>
+                </div>
+                <div class="calculator2">
+                    <b>Number 3</b>
+                    <input type="number" id="number3" placeholder="Number 3" required>
+                    <b>Number 4</b>
+                    <input type="number" id="number4" placeholder="Number 4" required>
+                </div>
+            </div>
+            <div class="foot1"><button type="button" onclick="sumNumber()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="sumOf">0</button>
+            </div>
+
+        </div>
+        <!----Square----->
+        <div class="Square">
+            <div class="menu1">Area of the Square</div>
+            <b>Side</b>
+            <input type="number" id="side1" placeholder="Number" required>
+            <select name="Square" id="side1">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <div class="foot1">
+                <button type="button" onclick="sideSquare()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="sumSquare">0</button>
+            </div>
+        </div>
+        <!----Simple Interest---->
+        <div class="simpleinterest1">
+            <div class="menu1">Simple Interest Calculator</div>
+            <b>Principle</b>
+            <input type="number" placeholder="Write your Amount here" id="principle1" required>
+            <b>Rate</b>
+            <input type="number" placeholder="write your % rate here" id="rate1" required>
+            <b>Time</b>
+            <input type="number" placeholder="Time in Year's" id="time1" required>
+            <div class="foot1">
+                <button type="button" onclick="simpleInterest()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="simAmount">0</button>
+
+            </div>
+        </div>
+        <!-- Compound Interest -->
+        <div class="compoundInst">
+            <div class="menu1">Compound Interest Calculator</div>
+            <b>Principle</b>
+            <input type="number" id="principle2" required>
+            <b>Rate</b>
+            <input type="number" id="rate2" required>
+            <b>Time</b>
+            <input type="number" id="time2" required>
+            <div class="foot1">
+                <button type="button" onclick="myCompound()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="compoundAmount">0</button>
+            </div>
+        </div>
+        <!-- Curved Surface Area of the Cone -->
+        <div class="cone1">
+            <div class="menu1">CSA of the Cone</div>
+            <b>Radius</b>
+            <input type="number" id="radi" placeholder="Radius">
+            <b>Slant Height</b>
+            <select name="cone1" id="radi">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <input type="number" id="height12" placeholder="Slant Height">
+            <select name="cone1" id="height12">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <div class="foot1">
+                <button type="button" onclick="myCSA()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="csaCone">0</button>
+            </div>
+        </div>
+        <!-- Total Surface Area of the Cone -->
+        <div class="cone2">
+            <div class="menu1">TSA of the Cone</div>
+            <b>Radius</b>
+            <input type="number" id="radius1" placeholder="Radius">
+            <select name="cone2" id="radius1">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <b>Slant Height</b>
+            <input type="number" id="Slantheight1" placeholder="Slant Height">
+            <select name="cone2" id="Slantheight1">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <div class="foot1">
+                <button type="button" onclick="tsaCone()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="tsaAreaa">0</button>
+            </div>
+
+        </div>
+        <!-- Area of the Triangle -->
+        <div class="triange1">
+            <div class="menu1">Area of the Triangle</div>
+            <b>Base</b>
+            <input type="number" id="basee" required >
+            <select name="triange1" id="basee">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <b>Height</b>
+            <input type="number" id="heightt" required>
+            <select name="triange1" id="heightt">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <div class="foot1">
+                <button type="button" onclick="triangleArea()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="areaa">0</button>
+            </div>
+        </div>
+        <!-- Area of the Hexagon -->
+        <div class="hexagon">
+            <div class="menu1">Area of Hexagon</div>
+            <b>Side</b>
+            <input type="number" id="side" required placeholder="In numbers">
+            <select name="hexagon" id="side">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <div class="foot1">
+                <button type="button" onclick="areaHexagon()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="areaHex">0</button>
+            </div>
+        </div>
+        <!-- Area of the Parallelogram -->
+        <div class="Parallelogram1">
+            <div class="menu1">Area of Parallelogram</div>
+            <b>Base</b>
+            <input type="number" id="base1p" placeholder="Base">
+            <select name="Parallelogram" id="base1p">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <b>Height</b>
+            <input type="number" id="height1p" placeholder="Height">
+            <select name="Parallelogram" id="height1p">
+                <option>CM</option>
+                <option>M</option>
+                <option>KM</option>
+                <option>Mile</option>
+              </select>
+            <div class="foot1">
+                <button type="button" onclick="areaPgram()">Calculate</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button id="arGram">0</button>
+            </div>
+            <script src="script.js"></script>
+</body>
+
+</html>
